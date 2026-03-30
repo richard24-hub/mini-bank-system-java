@@ -2,11 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BankAccount {
+
     private String name;
     private double balance;
     private List<Transaction> transactions;
 
-  
+   
     public BankAccount(String name, double balance) {
         this.name = name;
         this.balance = balance;
@@ -33,4 +34,5 @@ public class BankAccount {
     public void withdraw(double amount) {
         balance -= amount;
     }
-}
+
+} 
