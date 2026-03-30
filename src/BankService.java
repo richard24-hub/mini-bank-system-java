@@ -1,4 +1,4 @@
-import java.util.List;
+import java.util.ArrayList;
 
 public class BankService {
     private BankAccount account;
@@ -23,7 +23,7 @@ public class BankService {
         return account.getBalance();
     }
 
-    public List<Transaction> getTransactionHistory() {
+    public ArrayList<Transaction> getTransactionHistory() {
         return account.getTransactions();
     }
 
