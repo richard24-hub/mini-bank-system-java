@@ -10,6 +10,11 @@ public class BankAccount {
         this.transactions = new ArrayList<>();
     }
 
+    public BankAccount(String name, int balance){
+        this.name = name; 
+        this.balance = balance; 
+    }
+
     public double getBalance() {
         return balance;
     }
@@ -47,6 +52,6 @@ public void withdraw(double amount) throws InvalidAmountException, InsufficientB
         throw new InsufficientBalanceException("Withdraw cannot exceed balance.");
     }
 
-    reduceBalance(amount);
+    reduceBalance(amount){
     addTransaction(new Transaction(TransactionType.WITHDRAW, amount, balance));
 }
