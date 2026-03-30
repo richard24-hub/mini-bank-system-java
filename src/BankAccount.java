@@ -7,14 +7,12 @@ public class BankAccount {
     private double balance;
     private List<Transaction> transactions;
 
-   
     public BankAccount(String name, double balance) {
         this.name = name;
         this.balance = balance;
         this.transactions = new ArrayList<>();
     }
 
-    
     public String getAccountHolder() {
         return name;
     }
@@ -35,4 +33,4 @@ public class BankAccount {
         balance -= amount;
     }
 
-} 
+}
